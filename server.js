@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const fetch = require('node-fetch'); // Ensure node-fetch is installed for non-v18+ versions
+const { createClient } = require('@libsql/client');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./swaggerConfig'); // Import Swagger config
 
@@ -11,28 +11,20 @@ const PORT = 3002;
 // Middleware
 app.use(bodyParser.json());
 
-// Turso connection details from environment variables
-const TURSO_API_URL = process.env.TURSO_API_URL;
-const TURSO_API_KEY = process.env.TURSO_API_KEY;
+// Initialize Turso client
+const turso = createClient({
+  url: process.env.TURSO_API_URL,
+  authToken: process.env.TURSO_API_KEY,
+});
 
 // Function to execute SQL queries
 async function executeSQL(query, params = []) {
   try {
-    const response = await fetch(`${TURSO_API_URL}/query`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${TURSO_API_KEY}`,
-      },
-      body: JSON.stringify({ query, params }),
+    const result = await turso.execute({
+      sql: query,
+      args: params,
     });
-
-    if (!response.ok) {
-      throw new Error(`Error: ${response.statusText}`);
-    }
-
-    const result = await response.json();
-    return result;
+    return result.rows;
   } catch (error) {
     console.error('SQL Execution Error:', error);
     throw error;
