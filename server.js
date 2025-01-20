@@ -92,3 +92,49 @@ app.get('/users', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+//This is added in new commit 
+// Update a user
+/**
+ * @swagger
+ * /users/{id}:
+ *   put:
+ *     summary: Update a user
+ *     description: This endpoint allows updating a user's details.
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         description: ID of the user to update
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *             required:
+ *               - name
+ *               - email
+ *     responses:
+ *       200:
+ *         description: User updated successfully
+ */
+app.put('/users/:id', async (req, res) => {
+  const { id } = req.params;
+  const { name, email } = req.body;
+  const query = 'UPDATE users SET name = ?, email = ? WHERE id = ?';
+  console.log(query);
+  try {
+    const result = await executeSQL(query, [name, email, id]);
+    res.status(200).json({ message: 'User updated successfully', result });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
