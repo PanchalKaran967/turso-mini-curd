@@ -129,6 +129,7 @@ app.put('/users/:id', async (req, res) => {
   const { id } = req.params;
   const { name, email } = req.body;
   const query = 'UPDATE users SET name = ?, email = ? WHERE id = ?';
+  console.log(query);
   try {
     const result = await executeSQL(query, [name, email, id]);
     res.status(200).json({ message: 'User updated successfully', result });
@@ -160,6 +161,7 @@ app.delete('/users/:id', async (req, res) => {
   const query = 'DELETE FROM users WHERE id = ?';
   try {
     const result = await executeSQL(query, [id]);
+    console.log(result)
     res.status(200).json({ message: 'User deleted successfully', result });
   } catch (error) {
     res.status(500).json({ error: error.message });
