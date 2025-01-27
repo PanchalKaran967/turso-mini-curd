@@ -22,4 +22,3 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
 
 module.exports = swaggerDocs;
-//changes
