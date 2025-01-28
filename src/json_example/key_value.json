@@ -1,0 +1,22 @@
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 30,
+  "email": "john.smith@example.com",
+  "isStudent": false,
+  "height": 175.5,
+  "favoriteColor": "blue",
+  "phoneNumber": "+1-555-123-4567",
+  "country": "USA",
+  "occupation": "Software Developer",
+  "isMarried": true,
+  "hobbies": "reading, gaming, hiking",
+  "zipCode": "10001",
+  "lastLogin": "2025-01-28",
+  "credits": 1000,
+  "status": "active",
+  "language": "English",
+  "timezone": "UTC-5",
+  "subscriptionTier": "premium",
+  "accountBalance": 2500.75
+}

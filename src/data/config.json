@@ -1,0 +1,34 @@
+{
+  "appSettings": {
+    "name": "MyApp",
+    "version": "1.0.0",
+    "environment": "development",
+    "debug": true,
+    "api": {
+      "baseUrl": "https://api.example.com",
+      "timeout": 5000,
+      "retryAttempts": 3
+    },
+    "database": {
+      "host": "localhost",
+      "port": 5432,
+      "name": "myapp_db",
+      "maxConnections": 100,
+      "backup": {
+        "enabled": true,
+        "frequency": "daily",
+        "retention": 7
+      }
+    },
+    "cache": {
+      "enabled": true,
+      "ttl": 3600,
+      "maxSize": "1GB"
+    },
+    "features": {
+      "darkMode": true,
+      "notifications": true,
+      "analytics": false
+    }
+  }
+}
