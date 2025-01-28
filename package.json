@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Hello world",
   "dependencies": {
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
