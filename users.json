@@ -34,7 +34,8 @@
       "phoneNumbers": [
         "+1-555-555-8765"
       ],
-      "isActive": true
+      "isActive": true,
+      "registeredDate": "2024-07-15"
     }
   ]
 }
