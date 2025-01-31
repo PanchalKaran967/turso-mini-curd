@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Added here ",
   "license": "ISC",
-  "description": "",
+  "description": "Changed this ",
   "dependencies": {
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
