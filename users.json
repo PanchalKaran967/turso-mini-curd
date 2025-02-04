@@ -21,7 +21,6 @@
     },
     {
       "id": 2,
-      "firstName": "Jane",
       "lastName": "Smith",
       "email": "jane.smith@example.com",
       "age": 32,
@@ -31,11 +30,28 @@
         "country": "USA",
         "zipCode": "90001"
       },
+      "isActive": true,
+      "registeredDate": "2024-11-12",
+      "firstName": "Jane",
       "phoneNumbers": [
         "+1-555-555-8765"
-      ],
-      "isActive": true,
-      "registeredDate": "2024-11-12"
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Karan",
+      "lastName": "Panchal",
+      "email": "Panchalkaran967@gmail.com",
+      "address": {
+        "street": "Keri",
+        "city": "Ponda",
+        "country": "India",
+        "zipCode": 403401
+      },
+      "phoneNumbers": [
+        1234567890,
+        9823732912
+      ]
     }
   ]
 }
