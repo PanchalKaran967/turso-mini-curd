@@ -19,5 +19,6 @@
   "timezone": "UTC-5",
   "subscriptionTier": "premium",
   "accountBalance": 2500.75,
-  "newKey20": "testing"
+  "newKey20": "testing",
+  "newKey21": "Adding new through edit button on view mode"
 }
