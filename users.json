@@ -53,7 +53,9 @@
       },
       "phoneNumbers": [
         1234567890
-      ]
+      ],
+      "age": 54,
+      "isActive": false
     }
   ]
 }
