@@ -45,17 +45,30 @@
       "email": "Panchal967@gmail.com",
       "address": {
         "street": "Keri",
-        "city": "Ponda",
         "country": "India",
         "zipCode": 403401,
         "Hello world": "Hiee",
-        "newKey5": 32
+        "newKey5": 32,
+        "city": "Ponda"
       },
+      "age": 54,
+      "isActive": false,
       "phoneNumbers": [
         1234567890
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "K",
+      "lastName": "P",
+      "phoneNumbers": [
+        98232328382,
+        123128129120
       ],
-      "age": 54,
-      "isActive": false
+      "address": {
+        "street": "Keri,Ponda",
+        "city": "Goa"
+      }
     }
   ]
 }
