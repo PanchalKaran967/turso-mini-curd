@@ -17,7 +17,8 @@
         "+1-555-555-5678"
       ],
       "isActive": true,
-      "registeredDate": "2024-01-15"
+      "registeredDate": "2024-01-15",
+      "newKey9": {}
     },
     {
       "id": 2,
@@ -46,7 +47,9 @@
         "street": "Keri",
         "city": "Ponda",
         "country": "India",
-        "zipCode": 403401
+        "zipCode": 403401,
+        "Hello world": "Hiee",
+        "newKey5": 32
       },
       "phoneNumbers": [
         1234567890
