@@ -56,19 +56,6 @@
       "phoneNumbers": [
         1234567890
       ]
-    },
-    {
-      "id": 3,
-      "firstName": "K",
-      "lastName": "P",
-      "phoneNumbers": [
-        98232328382,
-        123128129120
-      ],
-      "address": {
-        "street": "Keri,Ponda",
-        "city": "Goa"
-      }
     }
   ]
 }
