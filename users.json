@@ -57,6 +57,26 @@
         1234567890,
         9604036877
       ]
+    },
+    {
+      "id": 4,
+      "firstName": "Ajit",
+      "lastName": "Gadkari",
+      "email": "AjitOff@gmail.com",
+      "address": {
+        "street": "Shirvoi",
+        "country": "India",
+        "zipCode": 403401,
+        "Hello world": "Hiee",
+        "newKey5": 32,
+        "city": "Ponda"
+      },
+      "age": 24,
+      "isActive": false,
+      "phoneNumbers": [
+        1234567890,
+        9604036877
+      ]
     }
   ]
 }
