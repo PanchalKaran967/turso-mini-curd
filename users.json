@@ -55,7 +55,7 @@
       "isActive": false,
       "phoneNumbers": [
         1234567890,
-        9604036877
+        96040368776
       ]
     },
     {
@@ -73,6 +73,44 @@
       },
       "age": 24,
       "isActive": false,
+      "phoneNumbers": [
+        1234567890,
+        9604036877
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Ajit",
+      "lastName": "Gadkari",
+      "email": "AjitOff@gmail.com",
+      "address": {
+        "street": "Shirvoi",
+        "country": "India",
+        "zipCode": 40340177373,
+        "Hello world": "Hiee",
+        "newKey5": 32,
+        "city": "Ponda"
+      },
+      "age": 24,
+      "isActive": false,
+      "phoneNumbers": [
+        1234567890,
+        9604036877
+      ]
+    },
+    {
+      "id": 6,
+      "firstName": "John",
+      "lastName": "Cena",
+      "email": "Youcantseeme@gmail.com",
+      "address": {
+        "street": "USA",
+        "country": "USA",
+        "zipCode": 12491221,
+        "city": "Newyork"
+      },
+      "age": 38,
+      "isActive": true,
       "phoneNumbers": [
         1234567890,
         9604036877
