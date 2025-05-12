@@ -7,7 +7,7 @@ const swaggerDocs = require('./swaggerConfig'); // Import Swagger config
 
 const app = express();
 const PORT = 3002;
-
+ added
 // Middleware
 app.use(bodyParser.json());
 dkdm
