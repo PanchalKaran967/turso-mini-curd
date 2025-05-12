@@ -10,7 +10,7 @@ const PORT = 3002;
 
 // Middleware
 app.use(bodyParser.json());
-
+asjnsajnjasjnasa
 // Initialize Turso client
 const turso = createClient({
   url: process.env.TURSO_API_URL,
